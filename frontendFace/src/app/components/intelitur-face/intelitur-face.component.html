@@ -1,0 +1,32 @@
+
+<p>intelitur-face works!</p>
+<!--COMPONENTE QUE CONTIENE LOS COMPONENTES POSTs CRUD-->
+
+<div id="intelitur-face-nav">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Posts CRUD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Statistics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Options</a>
+        </li>
+      </ul>
+</div>
+<h3>agregar submenu</h3>
+
+<!--componente para crear posts pendientes o realizados-->
+<app-ifcreate-post id="create_post_selector"></app-ifcreate-post>
+
+
+<!--componente que contiene la lista de los post realizados y no realizados-->
+<app-iflist-posts id="list_post_selector"></app-iflist-posts>
+
+
+<!--componente que me permite obtener los posts desde facebook-->
+<app-ifcheck-post></app-ifcheck-post>

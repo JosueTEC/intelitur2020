@@ -1,0 +1,69 @@
+#component_list_post_general_style{
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    width: 70%;
+    float: right;
+    margin:2px;
+    
+}
+
+
+
+
+#post_types_table_selection button{
+    width: 50%;
+}
+
+
+
+#published_post_options{
+    width: 28%;
+    display: inline-block;
+}
+#published_post_options button{
+    width: 100%;
+    margin: 1%;
+}
+
+
+
+
+
+
+
+#posts_reactions{
+    
+    width: 70%;
+    display: inline-block;
+    padding: 1%;
+   
+}
+#posts_reactions img{
+    max-width: 80px
+  
+}
+#posts_reactions div{
+    display: inline-block;
+
+}
+#posts_reactions p{
+    margin-left: 49%;
+    margin-right: 49%;
+}
+
+
+
+#pending_post_menu{
+    width: 28%;
+}
+#pending_post_menu button{
+    width: 100%;
+    margin: 1%;
+}
+
+
+
+/*para mostrar y ocultar las pestanas*/
+.hideDiv{
+    display: none;
+}

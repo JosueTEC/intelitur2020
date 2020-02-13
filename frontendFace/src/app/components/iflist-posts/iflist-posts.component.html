@@ -1,0 +1,151 @@
+<div id="component_list_post_general_style">
+
+  <p>iflist-posts works!</p>
+
+
+  <div id="post_types_table_selection">
+      <button type="button" (click)='changeDivDysplayDonePost()' class="btn btn-light">Posts</button>
+  
+      <button type="button" (click)='changeDivDysplayPendingPost()' class="btn btn-light">Pending Posts</button>
+  
+  </div>
+  
+  
+  
+  <div id="done_posts" [class.hideDiv]='showPostBoolean'>
+  
+    <h3>Add filters to search</h3>
+      
+  <!--tabla que contiene los post realizados-->
+  <table  class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  
+    <div id="published_post_menu">
+  
+      
+      <div id="published_post_options">
+          <button type="button" class="btn btn-primary">Get people response</button>
+  
+          <button type="button" class="btn btn-primary">Delete</button>
+  
+      </div>
+  
+  
+  
+      <div id="posts_reactions">
+          <div id="like">
+              <img src="../../../assets/intelitur-facebook-images/like_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+          <div id="love">
+              <img src="../../../assets/intelitur-facebook-images/love_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+          <div id="haha">
+              <img src="../../../assets/intelitur-facebook-images/haha_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+          <div id="wow">
+              <img src="../../../assets/intelitur-facebook-images/wow_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+          <div id="sad">
+              <img src="../../../assets/intelitur-facebook-images/sad_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+          <div id="angry">
+              <img src="../../../assets/intelitur-facebook-images/angry_icon.png" alt="">
+              <p>0</p>
+          </div>
+  
+  </div>
+  
+  
+    </div>
+  
+  
+  
+  </div>
+  
+  
+  <div id="pending_posts" [class.hideDiv]='showPendingPostBoolean'>
+
+    <h3>Add filters to search</h3>
+  
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+  
+  
+        <div id="pending_post_menu">
+          <button type="button" class="btn btn-primary">To post</button>
+        </div>
+  
+        
+  
+  </div>
+
+
+
+</div>

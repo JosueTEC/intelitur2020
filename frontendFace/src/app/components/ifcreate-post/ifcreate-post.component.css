@@ -1,0 +1,31 @@
+#component_create_post_general_style{
+ 
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  width: 29%;
+  display: inline-block;
+  margin:2px;
+ 
+}
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
+#create_post_menu{
+    width: 100%;
+    padding: 1%;
+}
+#create_post_menu button{
+    width: 100%;
+    margin: 2px;
+}
+
