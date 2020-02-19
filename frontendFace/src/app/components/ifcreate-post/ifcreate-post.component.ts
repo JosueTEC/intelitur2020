@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
+
 @Component({
   selector: 'app-ifcreate-post',
   templateUrl: './ifcreate-post.component.html',
   styleUrls: ['./ifcreate-post.component.css']
+
 })
 export class IFcreatePostComponent implements OnInit {
 
@@ -12,4 +16,8 @@ export class IFcreatePostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  addEmoji(event){
+    console.log(event)
+  }
 }

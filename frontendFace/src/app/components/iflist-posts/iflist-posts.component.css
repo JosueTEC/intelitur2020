@@ -1,13 +1,16 @@
 #component_list_post_general_style{
     border: solid 1px lightgray;
     border-radius: 5px;
-    width: 70%;
-    float: right;
+    width: 100%;
+    
     margin:2px;
     
 }
 
-
+table{
+    min-height: 250px;
+    max-height: 500px;
+}
 
 
 #post_types_table_selection button{

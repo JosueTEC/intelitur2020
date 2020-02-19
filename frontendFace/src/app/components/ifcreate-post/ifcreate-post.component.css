@@ -1,11 +1,22 @@
+
+
 #component_create_post_general_style{
  
   border: solid 1px lightgray;
   border-radius: 5px;
-  width: 29%;
+  width: 100%;
   display: inline-block;
   margin:2px;
  
+}
+img{
+  max-width: 20%;
+}
+
+
+textarea{
+  min-height: 200px;
+  max-height: 250px;
 }
 
 

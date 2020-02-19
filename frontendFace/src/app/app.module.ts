@@ -9,6 +9,11 @@ import { IFcreatePostComponent } from './components/ifcreate-post/ifcreate-post.
 import { IFlistPostsComponent } from './components/iflist-posts/iflist-posts.component';
 import { IFcheckPostComponent } from './components/ifcheck-post/ifcheck-post.component';
 
+//importo el modulo del emoji piker
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +24,8 @@ import { IFcheckPostComponent } from './components/ifcheck-post/ifcheck-post.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
