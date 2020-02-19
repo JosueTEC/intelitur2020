@@ -7,9 +7,19 @@
     
 }
 
-table{
+#done_posts table{
     min-height: 250px;
     max-height: 500px;
+    width: 90%;
+    float: left;
+    
+}
+
+#pending_posts table{
+    min-height: 250px;
+    max-height: 500px;
+    
+    float: left;
 }
 
 
@@ -20,48 +30,57 @@ table{
 
 
 #published_post_options{
-    width: 28%;
-    display: inline-block;
-}
-#published_post_options button{
     width: 100%;
-    margin: 1%;
+    padding: 1%;
+    
+   }
+#published_post_options button{
+    width: 60%;
+    margin: 2px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
-
-
-
+p{
+    margin: 0px;
+}
 
 
 #posts_reactions{
     
-    width: 70%;
-    display: inline-block;
-    padding: 1%;
-   
-}
-#posts_reactions img{
-    max-width: 80px
+    width: 9%;
+    
+
+    float: left;
   
+   
 }
 #posts_reactions div{
     display: inline-block;
 
 }
+#posts_reactions div img{
+    max-width: 50px;
+   float: right;
+
+}
+
 #posts_reactions p{
-    margin-left: 49%;
-    margin-right: 49%;
+    float: right;
 }
 
 
 
 #pending_post_menu{
-    width: 28%;
+    width: 100%;
+    padding: 1%;
 }
 #pending_post_menu button{
-    width: 100%;
-    margin: 1%;
+    width: 60%;
+    margin: 2px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 

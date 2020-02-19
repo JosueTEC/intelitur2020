@@ -6,22 +6,26 @@
         <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
       </div>
       <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+        <input type="file"  [(ngModel)]='imagen' class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
       </div>
     </div>
+    
+    <div>
+      
+    <img #postImage src="../../../assets/intelitur-facebook-images/image_placeholder.png" class="img-fluid"  alt="">
   
-    <img src="../../../assets/intelitur-facebook-images/image_placeholder.png" alt="">
-  
+    </div>
+    
     <div class="input-group">
       
       
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea #textPost [(ngModel)]='text' class="form-control" aria-label="With textarea"></textarea>
       
       
 
       <div>
-        <emoji-mart title="Pick your emoji…" emoji="point_up"></emoji-mart>
+        <emoji-mart (emojiSelect)='addEmoji($event)' title="Pick your emoji…" emoji="point_up"></emoji-mart>
       </div>
     </div>
 
@@ -34,9 +38,9 @@
   
     <div id="create_post_menu">
   
-      <button type="button" class="btn btn-primary">Admin post</button>
+      <button type="button" (click)='makePostSchema()' class="btn btn-primary">Admin post</button>
   
-      <button type="button" class="btn btn-primary">Pending post</button>
+      <button type="button" class="btn btn-primary" (click)=" show_image(2, 300, 300, 'imagen de prueba')">Pending post</button>
   
     </div>
     

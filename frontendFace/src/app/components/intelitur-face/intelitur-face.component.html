@@ -5,10 +5,10 @@
 <div id="intelitur-face-nav">
     <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Create post</a>
+          <a class="nav-link active" (click)='hideAllComp();  showCreatePost() '>Create post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Posts</a>
+          <a class="nav-link active"  (click)='hideAllComp();   showListPost() '>Posts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Administration</a>
@@ -24,13 +24,21 @@
 
 
 
+
 <!--componente para crear posts pendientes o realizados-->
-<app-ifcreate-post id="create_post_selector"></app-ifcreate-post>
+<app-ifcreate-post *ngIf='CreatePisOn'></app-ifcreate-post>
+
 
 
 <!--componente que contiene la lista de los post realizados y no realizados-->
-<app-iflist-posts id="list_post_selector"></app-iflist-posts>
+<app-iflist-posts *ngIf='ListPostisOn'></app-iflist-posts>
 
+
+<!--cada vex que realizamos una solicitud de permisos de face listamos las paginas aqui-->
+<app-ifselect-pages></app-ifselect-pages>
 
 <!--componente que me permite obtener los posts desde facebook-->
 <app-ifcheck-post></app-ifcheck-post>
+
+
+<button (click)="hacerAlgo()">asasasda</button>

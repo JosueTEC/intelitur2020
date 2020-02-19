@@ -1,3 +1,7 @@
+#algo{
+  display: none;
+}
+
 
 
 #component_create_post_general_style{
@@ -15,6 +19,7 @@ img{
 
 
 textarea{
+  min-width: 300px;
   min-height: 200px;
   max-height: 250px;
 }
@@ -36,7 +41,9 @@ img{
     padding: 1%;
 }
 #create_post_menu button{
-    width: 100%;
-    margin: 2px;
+  width: 60%;
+  margin: 2px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 

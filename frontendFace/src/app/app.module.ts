@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//mis componentes
 import { InteliturFaceComponent } from './components/intelitur-face/intelitur-face.component';
 
 import { IFcreatePostComponent } from './components/ifcreate-post/ifcreate-post.component';
 import { IFlistPostsComponent } from './components/iflist-posts/iflist-posts.component';
 import { IFcheckPostComponent } from './components/ifcheck-post/ifcheck-post.component';
+import { IfselectPagesComponent } from './components/ifselect-pages/ifselect-pages.component';
+
+
+import { FormsModule } from "@angular/forms";
 
 //importo el modulo del emoji piker
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
+
 
 
 
@@ -20,12 +27,14 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart';
     InteliturFaceComponent,
     IFcreatePostComponent,
     IFlistPostsComponent,
-    IFcheckPostComponent
+    IFcheckPostComponent,
+    IfselectPagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PickerModule
+    PickerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
